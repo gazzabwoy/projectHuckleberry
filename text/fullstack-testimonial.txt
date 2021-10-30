@@ -1,0 +1,11 @@
+Jake:
+
+Full Stack Developer
+
+"In a full stack web development role, you need to know how to code. 
+You build a website that goes down onto someone’s browser , 
+but you also build the program that sits on the server that sends out that web page."
+There’s been kind of a tradition of splitting the two skills up so a company would have a front-end developer and a back-end developer. 
+The cost of salaries in this field is quite high so from an employer's perspective, by combining the two into one role, you’re able to hire one developer instead of two.
+
+

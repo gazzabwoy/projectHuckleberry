@@ -1,0 +1,29 @@
+
+Back-end developers are responsible for writing the web services and APIs used by front-end developers and mobile application developers.
+
+A back-end web developer is responsible for server-side web application logic as well as the integration of the front-end part. Back-end Developer duties and responsibilities :
+
+1. Be involved and participate in the overall application lifecycle
+2. Focus on coding and debugging
+3. Collaborate with Front-end developers
+4. Define and communicate technical and design requirements
+5. Provide training, help and support to other team members
+6. Build high-quality reusable code that can be used in thew future
+7. Develop functional and sustainable web applications with clean codes
+8. Troubleshoot and debug applications?Learn about new technologies
+9. Stay up to date with current best practices
+10. Conduct UI tests and optimize performance
+11. Manage cutting-edge technologies to improve applications
+12. Collaborate with multidisciplinary team of designers, developers and system administrators
+13. Participate in conferences and educational programs
+14. Follow new and emerging technologies
+
+Back End Developer Requirements:
+
+1. Proficiency with Python, PHP, Ruby on Rails, SQL & API’s.
+2. Understanding of server-side – HTML, CSS & JavaScript.
+3. Good problem-solving skills.
+4. Excellent verbal communication skills.
+5. Good interpersonal skills.
+
+

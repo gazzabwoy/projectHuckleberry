@@ -1,0 +1,31 @@
+
+Front End Developers are computer programmers who specialise in website design. 
+
+Front End Developer duties include determining the structure and design of web pages, striking a balance between functional and aesthetic design and ensuring web design is optimized for smartphones.
+
+Front End Developer Responsibilities:
+
+1. Determining the structure and design of web pages.
+2. Ensuring user experience determines design choices.
+3. Developing features to enhance the user experience.
+4. Striking a balance between functional and aesthetic design.
+5. Ensuring web design is optimized for smartphones.
+6. Building reusable code for future use.
+7. Optimizing web pages for maximum speed and scalability.
+8. Utilizing a variety of mark-up languages to write web pages.
+9. Maintaining brand consistency throughout design.
+
+Front End Developer Requirements:
+
+1. Degree in Computer Science or related field.
+2. Understanding of key design principles.
+3. Proficiency with HTML, CSS, JavaScript and jQuery.
+4. Understanding of server-side CSS.
+5. Experience with graphic design applications such as Adobe Illustrator.
+6. Experience with responsive and adaptive design.
+7. Understanding of SEO principles.
+8. Good problem-solving skills.
+9. Excellent verbal communication skills.
+10. Good interpersonal skills.
+
+
