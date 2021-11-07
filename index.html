@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>	
+<html lang="en">	
 	
 	<head>
 		<meta charset="UTF-8">
@@ -7,75 +7,106 @@
 		<meta name="author" content="Gary Duffner">
 		<meta name="description" content="Huckleberry High Project">
 		<link rel="stylesheet" href = "css/index.css">
-		<title>Home</title>		
+		<title>Huckleberry High Careers</title>	
+		<script src="js/message.js"></script>
 	</head>
 	
-	<body>
-       <div class="wrapper">
+<body> 
+        <div class="wrapper">
+		 <canvas id="c"></canvas>
+		  <script src="js/matrixrainred.js"></script>
+		
 	   
 	    <!-- start of header block -->
 		
-			<header class="header"><!-- empty for now --></header>
+		  <header class="header">
+	
+		  
+		  
+		  </header>
+		  
+		  
+		     
+		
+		  
 			
-			<!-- end of header -->	
-			<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
-			<!-- start of banner block -->
-			
-			<div id="banner">
-			<video id="banner" playsinline autoplay muted loop>
-			<source src = "images/banner.mp4" width ="75%" height ="23vh" type="video/mp4" >
-			<script> document.getElementById('banner').play();  </script>
-             browser is lacking video tag support
-			</div>
-			
-		<!-- end of banner block -->	
+		<!-- end of header -->	
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		
+		<!-- start of banner block -->
+				
+		<video id ="banner" playsinline autoplay muted loop>
+			<source src = "images/banner.mp4" type="video/mp4" >
+			<script src="js/playvideo.js"></script>
+             your browser is lacking video tag support so cant display huckleberry high banner
+		</video>
+				
+		<!-- end of banner block -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+        <!--audio-->
+
+		<!-- end of audio -->
 		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->	
 		<!-- start of navigation block -->
-		
-		<nav class="nav">
+		   
+		<nav id="nav">
+		   <!--  THE HAMBURGER -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+		    <div id="navitems">
 			<ul>
 				<li><a href="gamedev.html">Gaming Developer</a></li>
 				<li><a href="frontend.html">Frontend Developer</a></li> 
 				<li><a href="backend.html">Backend Developer</a></li> 
 				<li><a href="fullstack.html">Fullstack Developer</a></li>
-			</ul>  				
+			
+			</ul>
+			</div>
 		</nav>
 		
 		<!-- end of navigation --> 
 		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 		<!-- start of side1 block -->
 		
-		 <div class = "side1">
-	    <a href = "https://www.glasgowclyde.ac.uk/" target = "_blank" id ="gcc.png">
-		<img class ="side1" src = "images/gcc.jpg" width ="100%" height ="100%" alt="gcc logo">
-		</a>
-		 </div>
+		<div class = "side1">
+	       <a href = "https://www.glasgowclyde.ac.uk/" target = "_blank" title="GCC" id="sidelink" ></a>
+		</div>
 		 
 		<!-- end of side1 block -->
 		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 		<!-- start of side2 block -->
 		
-		 <div class = "side2"
-		 <form action=""><center>
-		 <p>Contact Form<p> 
-         <label for="fname">Name: </label>
-         <input type="text" id="fname" name="fname" value=" "><br>
-         <label for="email">Email: </label>
-         <input type="text" id="email" name="email" value=" "><br>
-		 <label for="phone">Mobile:</label>
-         <input type="text" id="phone" name="phone" value=" "><br>
-         <input type="submit" value="Submit">
-		 </center>
-         </form>
-		 </div>
+		<div class = "side2">
+		   <!-- start of contactform -->
+		   
+		   <form id="contactform">
+              <input type="text" id="fname" name="fullname" style="height:15%" placeholder="Your full name..">
+              <input type="text" id="email" name="email" placeholder="Your email address..">
+			  <select id="campus" name="campus" >
+                <option value="cardonald">Cardonald</option>
+                <option value="langside">Langside</option>
+                <option value="anniesland">Anniesland</option>
+              </select> 
+            <textarea id="subject" name="subject" placeholder="Your message.." style="height:45%"></textarea>
+              <input id="button" type="submit" value="Send" onclick="WriteToFile(passForm) >
+			  <input id="reset"  type ="reset" value="Clear">
+			  <!--wont save a we are not using a webserver -->
+			  <!-- could define a path and save it, but it wouldn't be correct on another pc -->
+			  
+			  </form>
+			  
+		   
+		   <!-- end of contactform -->
+		 
+		</div>
 		 
 		<!-- end of side2 block -->
 		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 	    <!-- start of side3 block -->
 		
 		<div class ="side3">
-		<p><center><span class="flick"> Student Testimonials </center></p>
-		<p><iframe  id ="testimonials" src="text/software-testimonial.txt" ></iframe></p>
+		   <span class="flickside"> Student Testimonials </span>
+		   <iframe  id="testimonials" src="text/software-testimonial.txt" ></iframe>
 		</div>
 		
 		<!-- end of side3 block -->
@@ -83,20 +114,52 @@
 		<!-- start of side4 block -->
 		
 		<div class ="side4">
-		<a href = "https://www.mirc.co.uk/" target = "_blank" id ="mirc.png">
-		<center><img class ="side4" src = "images/mirc.png"  width ="50%" height ="50%"  alt="mirc logo" ></center>
-		</a>
+		   <a href ="https://www.mirc.co.uk/" target = "_blank"  title="Mirc" id="Mirc" ></a>
 		</div>
 		
 		<!-- end of side4 block -->
 		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- start of intro block -->
+		
+		<div class ="intro">
+		   <span class="flickmain" id="Main1">Have you considered a career in IT yet? No?</span>
+		</div>
+		
+		<!-- end of intro block -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 		<!-- start of article block -->
 		
-		 <div class ="intro">
-		<center><p><b><span class="flick" width ="75vw">Have you considered a career in IT? No?  Check out these career options!</span></b></p></center>
-		</div>
 		<div class ="article">
-		<p><iframe id= "iframe" src="text/main.txt" ></iframe></p>
+		   <div id="mainText">
+                 <H3>Why should you consider training for a career in IT?</H3>
+                    <p>If you’re just planning for the future or considering changing your current career, you’ll find that an IT career is an exciting option. 
+                       Here are a few reasons IT may be your ideal career:</p>
+                    <b>JOB GROWTH</b><br>
+                       Since technology is growing and evolving at a breakneck speed, so are many of the jobs. 
+                       Some roles – including Information Security Analysts, Network Architects, and Web Developers – are seeing annual double-digit growth. Over the next decade, factors like cloud computing, cyber security, computer systems design, healthcare IT, mobile networking, and data management are contributing to the need for new IT professionals.<br>
+                    <p><b>INDUSTRY AND JOB DIVERSITY</b><br>
+                       Not interested in working for Google, IBM, or Facebook? Then you’ll be glad to know that IT is in every industry – including retail, design, insurance, banking, aerospace, energy, and healthcare. It essentially provides the infrastructure and tools every organization needs to operate and grow.
+                       Job roles are just as diverse. All industries need designers and developers to author custom hardware, software, multimedia, and business applications to benefit their workflow and create new innovations. With these new applications in place, industries also need people who can manage and understand the inner workings of their IT systems and can provide support – internal and external. The roles in the business of IT are very diverse and require technical, social and business skills.</p>
+                    <b>STRONG INCOME</b><br>
+                       Fueled by the need for highly skilled professionals, IT pros are seeing average annual salaries of nearly $90,000. While most don’t start their careers at this salary level, they can advance their careers (and their salaries) by learning new skills, gaining work experience and earning valuable certifications.
+                    <p><b>LOW EDUCATIONAL COSTS</b><br>
+                       Unlike many high-paying careers, a four-year college or university degree may not be a necessity. Graduating from technical schools, gaining experience through internships, and completing professional certifications are successful alternatives many have used to launch their IT careers. As an IT professional, you can develop a prosperous career without investing in a master’s degree or PhD.</p>
+                    <p><b>FAST-CHANGING FIELD</b><br>
+                       Over the past twenty years, an explosion of new IT careers have arrived on the scene:
+                    <ul>
+                       <li>SEO Experts</li>
+                       <li>Mobile App Designers</li>
+                       <li>iOS Developers</li>
+                       <li>3D Animators</li>
+                       <li>IT Data Scientists</li>
+                       <li>Information Security Analysts</li>
+                       <li>Digital Strategists</li>
+                    </ul>
+                        The next twenty years will give birth to new opportunities and see the evolution of existing careers. IT has become the foundation on which industries rest.
+                    <br><br>
+                    <b>ENTREPRENEURIAL TRAINING GROUND</b><br>
+                       IT has been the proving ground of entrepreneurship. Those with great ideas and the work ethic to match can use IT to create world-changing products and organizations. Entrepreneurs with a technology skillset founded Microsoft, Apple, Google, Facebook, Twitter, eBay, and many other thriving businesses.
+           </div>
 		</div>
 		
 		<!-- end of article block -->
@@ -104,33 +167,30 @@
 		<!-- start of social media block -->
 		
 		<!-- Load font awesome icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href = "css/social.css">
+		
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+             <link rel="stylesheet" href = "css/social.css">
+			 
         <!-- The social media icon bar -->
-          <div class="icon-bar">
-		  <center>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="google"><i class="fa fa-google"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-			</center>
-          </div>
+		
+        <div class="icon-bar">
+            <a href="https://about.facebook.com/meta/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/Glasgow_Clyde" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.google.com/" target="_blank" class="google"><i class="fa fa-google"></i></a>
+            <a href="https://www.linkedin.com/jobs/search?keywords=IT&location=Worldwide&geoId=92000000&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/watch?v=KXTM0zXqnu4" target ="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
 		  
-		<!-- end of social media block -->
+		<!-- end of social media block --><!-- find the easter eggs -->
 		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 		<!-- start of footer block -->
 		
 		<footer class="footer">
-		 <center>
-         <p>&copy; Gary Duffner  <script type="text/javascript">document.write( new Date().getFullYear() );</script>
-		 </center>
-	    
+           <span class="flickfooter">&copy; Gary Duffner  <script>document.write( new Date().getFullYear() );</script></span>
 		</footer>
+		
 		<!-- end of footer block -->
 		</div>
 		<!--end of wrapper-->
-	</body> 
-	
-	
+	</body> 	
 </html>

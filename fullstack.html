@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>	
+<html lang="en">	
 	
 	<head>
 		<meta charset="UTF-8">
@@ -7,97 +7,158 @@
 		<meta name="author" content="Gary Duffner">
 		<meta name="description" content="Huckleberry High Project">
 		<link rel="stylesheet" href = "css/fullstack.css">
-		<title>Home</title>		
+		<title>Huckleberry High Careers</title>		
 	</head>
 	
 	<body>
        <div class="wrapper">
+		<canvas id="c"></canvas>
+		<script src="js/matrixrainpurple.js"></script>
+	   
 	    <!-- start of header block -->
-			<header class="header">
-			<img class ="banner" src = "images/banner.jpg" alt="Site Banner">
+		
+		  <header class="header"><!-- empty for now --></header>
 			
-			</header>
 		<!-- end of header -->	
-		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
-		<!-- start of navigation block -->	
-		<nav class="nav">
-			
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- start of banner block -->
+				
+		<video id ="banner" playsinline autoplay muted loop>
+			<source src = "images/banner.mp4" type="video/mp4" >
+			<script src="js/playvideo.js"></script>
+             your browser is lacking video tag support so cant display huckleberry high banner
+		</video>
+				
+		<!-- end of banner block -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->	
+		<!-- start of navigation block -->
+		
+		<nav id="nav">
+		   <!-- THE HAMBURGER -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+		    <div id="navitems">
+		
 			<ul>
-				<li><a href="index.html">Huckleberry Careers</a></li>
+			    <li><a href="index.html">Huckleberry Careers</a></li>
 				<li><a href="gamedev.html">Gaming Developer</a></li>
 				<li><a href="frontend.html">Frontend Developer</a></li> 
 				<li><a href="backend.html">Backend Developer</a></li> 
-				<li class="active"><a href="fullstack.html">Fullstack Developer</a></li> 
-				
-			</ul>
-           				
+				<li class="active"><a href="fullstack.html">Fullstack Developer</a></li>	
+			</ul> 
+		   </div>
 		</nav>
+		
 		<!-- end of navigation --> 
-		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-		
-		
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 		<!-- start of side1 block -->
+		
 		 <div class = "side1">
-	    <a href = "https://www.glasgowclyde.ac.uk/" target = "_blank" id ="gcc.png">
-		<img class ="side1" src = "images/gcc.jpg" width ="100%" height ="100%" alt="gcc logo">
-		</a>
+		 
+	        <a href = "https://www.glasgowclyde.ac.uk/" target = "_blank" title="GCC" id="sidelink" ></a>
+		 
 		 </div>
+		
 		<!-- end of side1 block -->
-		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 		<!-- start of side2 block -->
+		
 		 <div class = "side2">
-	     <p><!-- yes --></p>
-		
+		 <!-- empty for now -->
 		 </div>
+		 
 		<!-- end of side2 block -->
-		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 	    <!-- start of side3 block -->
+		
 		<div class ="side3">
-		<p></p><!-- with no content here grid shrinks and no pictures at side --> 
+		  <span class="flickside"> Student Testimonials </span>
+		  <iframe  id ="testimonials" src="text/fullstack-testimonial.txt" ></iframe>
 		</div>
+		
 		<!-- end of side3 block -->
-		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 		<!-- start of side4 block -->
+		
 		<div class ="side4">
-		<!-- Load font awesome icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href = "css/social.css">
-        <!-- The social media icon bar -->
-          <div class="icon-bar">
-		  <center>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="google"><i class="fa fa-google"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-			</center>
-          </div>
+		<!---empty for now -->
 		</div>
+		
 		<!-- end of side4 block -->
-		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- start of intro block -->
 		
-		
-		<!-- start of article block -->
-		<div class ="article">
-		
-		
-		<center><b><h1>Fullstack Developers can earn over £65,000 anually</h1></b></center>
-		
-		<iframe class="iframe" src="text/fullstack.txt"></iframe>
-	
-		
-		
-		
+		<div class ="intro"> 
+		  <span class="flickmain" id="Main1">FullStack Developers can earn over £65,000 per year</span>
 		</div>
+		
+		<!-- end of intro block -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- start of article block -->
+		
+	<div class ="article">
+		<div id="mainText">
+		  <h3>Full Stack Developer</h3>
+		  <p>Full Stack Developers are computer programmers who are proficient in both front and back end coding.
+           Their primary responsibilities include designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms.
+          <h4>Full Stack Developer Responsibilities:</h4>
+         <ol>
+          <li>Developing front end website architecture.</li>
+          <li>Designing user interactions on web pages.</li>
+          <li>Developing back end website applications.</li>
+          <li>Creating servers and databases for functionality.</li>
+          <li>Ensuring cross-platform optimization for mobile phones.</li>
+          <li>Ensuring responsiveness of applications.</li>
+          <li>Working alongside graphic designers for web design features.</li>
+          <li>Seeing through a project from conception to finished product.</li>
+          <li>Designing and developing APIs.</li>
+          <li>Meeting both technical and consumer needs.</li>
+          <li>Staying abreast of developments in web applications and programming languages.</li>
+         </ol>
+           <h4>Full Stack Developer Requirements:</h4>
+         <ol>
+          <li> Degree in Computer Science.</li>
+          <li>Strong organizational and project management skills.</li>
+          <li>Proficiency with fundamental front-end languages such as HTML, CSS and JavaScript.</li>
+          <li>Familiarity with JavaScript frameworks such as Angular JS, React and Amber.</li>
+          <li>Proficiency with server-side languages such as Python, Ruby, Java, PHP and .Net.</li>
+          <li>Familiarity with database technology such as MySQL, Oracle and MongoDB.</li>
+          <li>Excellent verbal communication skills.</li>
+          <li>Good problem-solving skills.</li>
+          <li>Attention to detail.</li>
+         </ol>		
+       </div>
+    </div>
+		
 		<!-- end of article block -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- start of social media block -->
 		
+		<!-- Load font awesome icons -->
 		
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+             <link rel="stylesheet" href = "css/social.css">
+			 
+        <!-- The social media icon bar -->
+		
+        <div class="icon-bar">
+            <a href="https://about.facebook.com/meta/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/Glasgow_Clyde" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.google.com/" target="_blank" class="google"><i class="fa fa-google"></i></a>
+            <a href="https://www.linkedin.com/jobs/search?keywords=IT&location=Worldwide&geoId=92000000&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/watch?v=orJSJGHjBLI" target ="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+		  
+		<!-- end of social media block --><!-- find the easter eggs -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 		<!-- start of footer block -->
+		
 		<footer class="footer">
-         <center><p>&copy; Gary Duffner  <script type="text/javascript">document.write( new Date().getFullYear() );</script></center>
-	    </footer>
+           <span class="flickfooter">&copy; Gary Duffner  <script>document.write( new Date().getFullYear() );</script></span>
+		</footer>
+		
 		<!-- end of footer block -->
 		</div>
-	</body> 		
-	
+		<!--end of wrapper-->
+	</body> 	
 </html>

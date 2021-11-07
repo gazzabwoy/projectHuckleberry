@@ -12,34 +12,56 @@ I got nothin' left to lose, or use, or do.........."
 */
 
 body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  font-family: tahoma;
-  background-image: url("../images/background.jpg");
-  background-size: cover;
-  
+     display:grid;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     overflow: hidden;
+	 color: #fff;
+     background-image: url("../images/background.jpg");
 }
+/* defines width of matrix background */
+canvas {
+      display: grid;
+		  width: 75vw;
+		  height: 100vh;
+		  
+      }
+/* page container */
 .wrapper {
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: (25vw, 50vw, 25vw);
+  grid-template-columns: 25vw 50vw 25vw;
   grid-template-rows: repeat(4, 25vh);
   min-height: 100vh;
   min-width: 100vw;
+  padding: 2px;
 }
+/* Its now a video/mp4 was an image */
 #banner {
+  padding:2px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 75vw;
+  height: 25vh;
+  border-radius: 8px;
   
-  grid-row: 1 / 1;	
-  position : flex;
-  min-width: 1vh;
-  height: 23vh;
-  transform: translate( 1vw, 1vh);
-  
-  
+/*position audio player */ 
 }
+#music {
+  position: fixed;
+  left: 25vw;
+  bottom: 0;
+  width: 20vw;
+  height: 5vh;
+  border-radius: 8px;
+  
+	
+	
+
+}
+
 
 /* ANIMATION */
 @keyframes flicker {
@@ -54,122 +76,311 @@ body {
 }
 
 /* ATTACH ANIMATION */
-.flick {
+.flickmain{
+  font-size: 3vw;
   animation: flicker 1s ease-in-out infinite alternate;
+ text-align: center;
+}
+
+.flickside {
+  font-size: 2vw;
+  color: white;
+  animation: flicker 1s ease-in-out infinite alternate;
+  text-align: center;
+}
+.flickfooter {
+  font-size: 1vw;
+  animation: flicker 1s ease-in-out infinite alternate;
+  text-align: center;
+  
 }
   
 
 .intro {
-	
+ display: grid ;	
  grid-column-start: 1;
  grid-column-end: 2;
- grid-row: 2 / 2;	
- height:25vh;
- color: red;
- left: 50%;
- width : 75vw;
- font-size: 2vw;
- transform: translate(%);		
+ grid-row: 2 / 2;
+ color: white;
+ font-family: Lucida;
+  width: 74vw;
+  height: 43vh;
+ 
+ 
+  	
 }
 .article {
-	
+  display : grid;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row: 3 / span 4;
-  width: 75vw;
-  
+  grid-row: 3 / 4;
+  width: 74vw;
+  height: 43vh;
+  border-radius: 8px;
+  background-image:url("../images/text.jpg");
+  background-size: cover;
+  opacity: 100%;
 }
-iframe {
-  
-  width: 75vw;
-  height: 40vh;
-  background-color: whitesmoke;
-  font-size: 1vw;
+h3,h4 {
+	text-align: center;
 }
+#mainText {
+	padding: 10px;
+	font-size: 3vh;
+    animation: flicker 1s ease-in-out infinite alternate;
+    text-align: left;
+	font-family: Lucida;
+	color: white;
+	overflow-y:scroll;
+	height:41vh;
 
+	
+}
+	
 #testimonials {
-  
+  display:grid;
+  margin:auto;
+  border-radius: 8px;
+  align-items: center;
   width: 23vw;
   height: 15vh;
   background-color: whitesmoke;
-  font-size: 1vw;
+  
+}
+#Main1 {
+	display: grid;
+	position: fixed;
+	width:73%;
+    top: 43vh;
+	left: 50vw;
+    transform: translate(-50vw, -50%);	
 }
 
-
-.nav {
+#nav {
   float: none;
   position: fixed;
-  top: 43vh;
+  width: 70%;
+  top: 30vh;
   left: 50vw;
-  transform: translate(-40vw, -50%);
-  width: 100%;
+  transform: translate(-40vw, -2vh);
+  
 }
-.nav li {
+#nav li {
   display: inline-block;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 2vw 2vh;
   padding: 1vw 1vw;
-  width: 10vw;
-  background-image: linear-gradient(to bottom right, red, purple);
+  width: 15%;
+  background-image: linear-gradient(to bottom , red, rgb(27, 2, 27));
   color: white;
   border: solid 1px whitesmoke;
 }
-.nav li a {
-  font-size: 17px;
+#nav li a {
+  font-size: 1vw;
   text-decoration: none;
   color: whitesmoke;
 }
-.nav li:hover {
-  background-image: linear-gradient(to top right, red, blue);
+#nav li:hover {
+  background-image: linear-gradient(to top , red, blue);
 }
-.nav li.active {
-  background-image: linear-gradient(to bottom, white, purple);
+#nav li.active {
+  background-image: linear-gradient(to top, red, rgb(90, 14, 90));
+}
+#nav label,
+#hamburger { 
+ display: none; 
+ }
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  
+#navitems   {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+ 
+  /* HAMBURGER ICON */
+#nav label { 
+    
+    display: grid; 
+	position: fixed;
+	top: -5vh;
+	left: -8vw;
+    color: white;
+    background-image: linear-gradient(to bottom, red, blue);
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 12px;
+	border-radius: 50%;
+  }
+/* TOGGLE SHOW/HIDE MENU */
+#navitems { 
+display: none; 
+}
+#nav input:checked ~ 
+#navitems { 
+display: block; 
+}
 }
 
 .side1 {
-  opacity: 75%;
-  border: 2px;
-  color: orange;
-  border-radius: 8px;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 2px;
+  display : grid;
   grid-column: 3 / 3;
   grid-row: 1 / 2;
+  opacity: 85%;
+  border-radius: 8px;
+  background-image: url("../images/gcc.png");
+  background-size: 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  
+}
+#Gcc {
+  background-image: url("../images/gcc.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;	
 }
 .side2 {
+  display:grid;
   grid-column: 3 / 3;
-  grid-row: 2 span 2;
-  border: none;
+  grid-row: 2 ;
   border-radius: 8px;
-  color: whitesmoke;
-  font-size: 20px;
   
+  
+}
+#contactform {
+	
+  padding: 2px;
+  width: 25vw;
+  height: 25vh;
+  border-radius: 8px;
+  background-image: url("../images/text.jpg");
+  cursor: pointer;
+}
+#subject {
+	 height:45vh;
+	 
+}
+#button {
+	display :grid;
+	position: fixed;
+	height: 4vh;
+	width: 4vw;
+	top: 45vh;
+	right: 1vw;
+	border-radius: 8px;
+}   
+#reset {
+	display :grid;
+	position: fixed;
+	height: 4vh;
+	width: 4vw;
+	top: 40vh;
+	right: 1vw;
+	border-radius: 8px;
+}   
+
+#fname { 
+
+background-color:whitesmoke;
+width: 98%;
+}
+#email { 
+
+background-color:whitesmoke;
+width: 98%;
+}
+input[type=text], select  {
+  color: purple;
+  background-color: whitesmoke;
+  width: 98%; /* Full width */
+  padding: 1vh; /* Some padding */ 
+  border: 1px solid purple; /* Purple border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 2px; /* Add a top margin */
+  margin-left: 2px; /* Add a left margin */
+  margin-bottom: 2px; /* Bottom margin */
+  
+}
+input[type=text], textarea {
+  background-color: whitesmoke;
+  color: purple;
+  width: 75%; /* Full width */
+  padding: 1vh; /* Some padding */ 
+  border: 1px solid purple; /* Purple border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 2px; /* Add a top margin */
+  margin-left: 2px; /* Add a left margin */
+  margin-bottom: 2px; /* Bottom margin */
+  
+}
+
+input[type=submit] {
+  background-image: linear-gradient(to bottom right, red, purple);
+  color: whitesmoke;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  
+}
+input[type=submit]:hover {
+  background-image: linear-gradient(to bottom, red, blue);
+}
+input[type=reset] {
+  background-image: linear-gradient(to bottom right, red, purple);
+  color: whitesmoke;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  
+}
+input[type=reset]:hover {
+  background-image: linear-gradient(to bottom, red, blue);
 }
 
 .side3 {
+  display: grid;
+  align-items: center;
   grid-column: 3 / 3;
-  grid-row: 3 span 3;
+  grid-row: 3 ;
+  background-image: url("../images/text.jpg");
+  background-size: 98%;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 8px;
-  color: red;
-  
+  color: whitesmoke;
+  display: grid;
+  align-items: center;
 }
 
-.side4 {
+.side4  {
+  display: grid;
   grid-column: 3 / 3;
-  grid-row: 4 span 4;
-  border-radius: 8px;
+  grid-row: 4 ;
+  
+  
   
 }
-
-
+#Mirc {
+  background-image: url("../images/mirc.png");
+  background-size: 98%;
+  background-position: center;
+  background-repeat: no-repeat;	
+  border-radius: 8px;
+}
 .footer {
   position: absolute;
   bottom: 0;
-  left: 10px;
-  width: 99%;
-
+  left: 46vw;
+  width: 100%;
   font-size: 20px;
   color: white;
   opacity: 75%;
+  
 }
