@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href = "css/index.css">
 		<title>Huckleberry High Careers</title>	
 		<script src="js/message.js"></script>
+		
 	</head>
 	
 <body> 
@@ -44,7 +45,13 @@
 		<!-- end of banner block -->
 		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
         <!--audio-->
-
+		<div class="music">
+		
+		<audio preload="meta"loop="true"></audio>  
+		<script src="js/audio.js"></script>
+		   <button id="audioButton1" onclick="matrixPlay()"></button>
+           <button id="audioButton2" onclick="matrixPause()"></button>  
+		</div>
 		<!-- end of audio -->
 		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->	
 		<!-- start of navigation block -->
@@ -80,6 +87,7 @@
 		   <!-- start of contactform -->
 		   
 		   <form id="contactform">
+		     
               <input type="text" id="fname" name="fullname" style="height:15%" placeholder="Your full name..">
               <input type="text" id="email" name="email" placeholder="Your email address..">
 			  <select id="campus" name="campus" >
@@ -88,7 +96,8 @@
                 <option value="anniesland">Anniesland</option>
               </select> 
             <textarea id="subject" name="subject" placeholder="Your message.." style="height:45%"></textarea>
-              <input id="button" type="submit" value="Send" onclick="WriteToFile(passForm) ">
+              <input id="button" type="submit" value="Send" onclick="WriteToFile(passForm)">                       
+			  
 			  <input id="reset"  type ="reset" value="Clear">
 			  <!--wont save as we are not using a webserver -->
 			  <!-- could define a path and save it, but it wouldn't be correct on another pc -->

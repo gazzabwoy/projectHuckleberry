@@ -47,22 +47,36 @@ canvas {
   height: 25vh;
   border-radius: 8px;
   
+}  
 /*position audio player */ 
+
+.music {
+  display: inline-block;
+  position: absolute;
+  left: 1vw;
+  bottom: 0vh;
 }
-#music {
-  position: fixed;
-  left: 25vw;
-  bottom: 0;
-  width: 20vw;
-  height: 5vh;
-  border-radius: 8px;
-  
-	
-	
+/* audio buttons */
+#audioButton1 {
+background-image: url("../assets/buttons/play.png");
+background-size: 100%;
 
+background-repeat: no-repeat;
+border-radius: 50%;
+opacity:60%;
+width:2.5vw;
+height:2.5vw;	
 }
+#audioButton2 {
+background-image: url("../assets/buttons/pause.png");	
+background-size: 100%;
 
-
+background-repeat: no-repeat;
+border-radius: 50%;
+opacity:60%;
+width:2.5vw;
+height:2.5vw;	
+}
 /* ANIMATION */
 @keyframes flicker {
   from {
@@ -342,6 +356,12 @@ input[type=reset] {
 }
 input[type=reset]:hover {
   background-image: linear-gradient(to bottom, red, blue);
+}
+.savedmessage {
+
+width : 50vw;
+height: 50vh;
+
 }
 
 .side3 {

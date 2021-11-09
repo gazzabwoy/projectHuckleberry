@@ -33,10 +33,13 @@
 		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
 		<!--audio-->
         
-		<audio id="music" autoplay loop preload="auto" ">
-	    <source src="" type="audio/ogg">
-	     Your browser does not support the audio element.
-        </audio>
+		<div class="music">
+		
+		<audio preload="meta"loop="true"></audio>  
+		<script src="js/audio.js"></script>
+		   <button id="audioButton1" onclick="matrixPlay()"></button>
+           <button id="audioButton2" onclick="matrixPause()"></button>  
+		</div>
 
 		<!-- end of audio -->
 		

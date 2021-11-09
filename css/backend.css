@@ -45,6 +45,35 @@ height: 100vh;
   
   
 }
+/*position audio player */ 
+
+.music {
+  display: inline-block;
+  position: absolute;
+  left: 1vw;
+  bottom: 0vh;
+}
+/* audio buttons */
+#audioButton1 {
+background-image: url("../assets/buttons/play.png");
+background-size: 100%;
+
+background-repeat: no-repeat;
+border-radius: 50%;
+opacity:60%;
+width:2.5vw;
+height:2.5vw;	
+}
+#audioButton2 {
+background-image: url("../assets/buttons/pause.png");	
+background-size: 100%;
+
+background-repeat: no-repeat;
+border-radius: 50%;
+opacity:60%;
+width:2.5vw;
+height:2.5vw;	
+}
 
 /* ANIMATION */
 @keyframes flicker {
